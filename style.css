@@ -66,6 +66,32 @@ main {
 
 footer {
   background: lavender;
+  display: flex;
+  justify-content: space-between;
+
+  & #copyright-info {
+    display: inline-flex;
+    gap: 0.5vw;
+    align-items: center;
+  }
+
+  & #company-logo {
+    align-self: stretch;
+    text-align: center;
+    height: 28px;
+  }
+
+  & nav {
+    & ul {
+      display: flex;
+      gap: 1vw;
+      flex-grow: 1;
+
+      & li {
+        list-style: none;
+      }
+    }
+  }
 }
 
 /* general selectors */
