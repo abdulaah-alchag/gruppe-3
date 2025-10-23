@@ -1,5 +1,4 @@
 html {
-  background: yellow;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -27,31 +26,28 @@ header {
       background: #e8e5e480;
       width: fit-content;
       display: flex;
+      gap: 5px;
       padding: 4px;
       border-radius: 30px;
 
       & li {
         list-style: none;
         border-radius: inherit;
-        margin-inline: 3px;
 
         & a {
           display: block;
-          padding: 4px 20px;
+          padding: 10px 40px;
           border-radius: inherit;
           color: black;
 
-          &[href="./index.html"] {
-            background: white;
-          }
-
-          &:active {
-            background: white;
-          }
-
           &:hover {
-            background: black;
+            background: #7f7f7f;
             color: white;
+          }
+          &:active {
+            background: rgb(73, 72, 72);
+            color: white;
+            cursor: grabbing;
           }
         }
       }
@@ -60,14 +56,14 @@ header {
 }
 
 main {
-  background: mintcream;
+  outline: 1px solid limegreen;
   flex-grow: 1;
 }
 
 footer {
-  background: lavender;
   display: flex;
   justify-content: space-between;
+  padding: 20px; /* @Abood: i added this to get more space between text and bottom */
 
   & #copyright-info {
     display: inline-flex;

@@ -1,0 +1,4 @@
+/* mark correct button in page-menu white on pageload */
+header a[href="./index.html"] {
+  background: white;
+}
