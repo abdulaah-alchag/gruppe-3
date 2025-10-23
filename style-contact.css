@@ -1,3 +1,4 @@
+/* mark correct button in page-menu white on pageload */
 header a[href="./contact.html"] {
   background: white;
 }
