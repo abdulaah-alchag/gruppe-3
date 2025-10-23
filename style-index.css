@@ -2,3 +2,75 @@
 header a[href="./index.html"] {
   background: white;
 }
+
+main {
+  & #top {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & h1 {
+      max-width: 90vw;
+      font-size: 3rem;
+      line-height: 3.3rem;
+    }
+
+    & ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 4%;
+      padding-top: 5%;
+
+      & li {
+        background: #e8e5e480;
+        list-style-type: none;
+        padding: 0.3% 1%;
+        border-radius: 30px;
+        cursor: pointer;
+
+        &:first-of-type {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  & #content {
+    & #gallery {
+      width: 95%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      & .gallery-item {
+        width: fit-content;
+        flex: 1 0 49%;
+        padding: 2% 1%;
+        border-radius: 2%;
+
+        & img {
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+
+  & #bottom {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3.3rem;
+
+    & #bottom-second {
+      color: #7f7f7f;
+    }
+  }
+}
