@@ -2,3 +2,55 @@
 header a[href="./profile.html"] {
   background: white;
 }
+
+main {
+  &.container {
+    display: flex;
+    flex-direction: row;
+
+    & .left-column {
+      width: 33%;
+      padding: 2rem;
+
+      & #profile-img {
+        width: auto;
+        border-radius: 2%;
+      }
+      & .twitter-container {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        & svg {
+          display: inline;
+          margin-inline: auto;
+        }
+      }
+      & .github-container {
+        text-align: center;
+        svg {
+          display: inline;
+          width: auto;
+          height: 100%;
+        }
+      }
+    }
+    & .right-column {
+      padding: 2rem;
+      #about,
+      #experience {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #e2dddd;
+        ul {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+span {
+  text-align: center;
+}
