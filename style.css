@@ -59,7 +59,6 @@ header {
 }
 
 main {
-  outline: 1px solid limegreen;
   flex-grow: 1;
 }
 
@@ -88,6 +87,10 @@ footer {
 
       & li {
         list-style: none;
+
+        & a {
+          color: inherit;
+        }
       }
     }
   }
