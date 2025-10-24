@@ -2,3 +2,80 @@
 header a[href="./profile.html"] {
   background: white;
 }
+
+main {
+  &.container {
+    h1 {
+      max-width: 90vw;
+      font-size: 3rem;
+      line-height: 3.3rem;
+      text-align: center;
+    }
+    display: flex;
+    flex-direction: row;
+
+    & .left-column {
+      width: 33%;
+      padding: 2vh;
+      border-radius: 2%;
+
+      & #profile-img {
+        width: auto;
+        border-radius: 2%;
+        box-shadow: 1px 1px 2px rgb(0, 0, 0);
+        object-fit: cover;
+      }
+      & .twitter-container {
+        padding-top: 5%;
+        margin: auto;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        svg {
+          display: inline;
+          margin-inline: auto;
+          margin-top: 10px;
+          align-items: center;
+        }
+      }
+      & .github-container {
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        svg {
+          display: inline;
+          width: auto;
+          height: 100%;
+          padding-top: 10px;
+          align-items: center;
+        }
+      }
+    }
+    & .right-column {
+      background-image: url("ressources/profile/dream-pulse-header.jpg");
+      background-repeat: no-repeat;
+      filter: grayscale();
+      border-radius: 2%;
+      padding: 2rem;
+      #about,
+      #experience {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        box-shadow: 3px 3px 3px #e2dddd;
+        ul {
+          list-style: none;
+        }
+        h2 {
+          text-align: center;
+          text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        }
+      }
+      #about p {
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      }
+      #experience {
+        text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      }
+    }
+  }
+}
