@@ -22,7 +22,60 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container">??? contact content here ???</main>
+    <main class="container">
+      <section id="intro">
+        <div id="intro-text">
+          <h1>Get in touch.</h1>
+          <h2>Let's create something great.</h2>
+        </div>
+        <figure>
+          <img
+            src="https://picsum.photos/id/668/600/400?grayscale"
+            alt="Picsum example image"
+          />
+        </figure>
+      </section>
+      <section id="contact-links">
+        <div id="contact-phone">
+          <a href="tel:+12 345 67 89">+12 345 67 89</a>
+        </div>
+        <div id="contact-mail">
+          <a href="mailto:example@mail.com">example@mail.com</a>
+        </div>
+      </section>
+      <section id="social-links">
+        <div id="social-wrapper">
+          <a href="https://twitter.com" target="_blank"
+            ><img
+              src="./ressources/contact/twitter-logo.png"
+              alt="/ressources/contact/twitter-logo.png"
+          /></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><img
+              src="./ressources/contact/linkedin-logo.png"
+              alt="/ressources/contact/linkedin-logo.png"
+          /></a>
+        </div>
+      </section>
+      <section id="contact-form">
+        <form action="dialog" method="dialog">
+          <fieldset>
+            <legend>SUBMIT INQUIRY</legend>
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" />
+            <label for="userphone">Your Phone:</label>
+            <input type="tel" id="userphone" name="userphone" />
+            <label for="usermail">Your Mail:</label>
+            <input type="email" id="usermail" name="usermail" />
+            <label for="usermessage">Your Message:</label>
+            <textarea id="usermessage" name="usermessage"></textarea>
+          </fieldset>
+          <div id="button-wrapper">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="container">
